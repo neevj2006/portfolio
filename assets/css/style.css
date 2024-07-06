@@ -199,6 +199,7 @@ input {
   font-weight: var(--font-medium);
   position: relative;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .btn_share {
