@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from "react";
+import homeImg from "../assets/img/home-img.png";
 
 class Home extends Component {
   render() {
@@ -33,7 +34,7 @@ class Home extends Component {
               </a>
             </div>
           </div>
-          <img src="assets/img/home-img.png" alt="" className="home_img" />
+          <img src={homeImg} alt="home-img" className="home_img" />
 
           <div className="home_data">
             <h1 className="home_title">Hi, I'm Neev</h1>

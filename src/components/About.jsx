@@ -3,6 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from "react";
 import resume from "../../assets/img/Resume.pdf";
+import aboutImg from "../../assets/img/about-img.png";
 
 class About extends Component {
   handleResume = () => {
@@ -16,7 +17,7 @@ class About extends Component {
           About Me
         </h2>
         <div className="about_container container grid">
-          <img src="assets/img/about-img.png" alt="" className="about_img" />
+          <img src={aboutImg} alt="about-img" className="about_img" />
           <div className="about_data" data-aos="fade-left">
             <h3 className="about_heading">
               Hi, I'm Neev, Student at Boston University
