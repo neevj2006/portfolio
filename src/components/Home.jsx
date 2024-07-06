@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from "react";
-import homeImg from "../assets/img/home-img.png";
+import homeImg from "../../assets/img/home-img.png";
 
 class Home extends Component {
   render() {
