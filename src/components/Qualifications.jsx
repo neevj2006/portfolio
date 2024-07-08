@@ -3,7 +3,7 @@ import { Component } from "react";
 class Qualifications extends Component {
   render() {
     return (
-      <div className="qualification section main">
+      <div className="qualification section">
         <h2 data-heading="My Journey" className="section_title">
           Qualifications
         </h2>
