@@ -93,9 +93,7 @@ class Work extends Component {
               expenses, featuring a user-friendly interface.
             </div>
             <div className="work_technologies">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+              <span>React</span>
               <span>Node</span>
               <span>Express</span>
               <span>MongoDB</span>
@@ -131,9 +129,7 @@ class Work extends Component {
               create, manage, and track their daily tasks and to-do items.
             </div>
             <div className="work_technologies">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+              <span>React</span>
               <span>Node</span>
               <span>Express</span>
               <span>MongoDB</span>
@@ -171,9 +167,7 @@ class Work extends Component {
               courses.
             </div>
             <div className="work_technologies">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+              <span>React</span>
               <span>Node</span>
               <span>Express</span>
             </div>
