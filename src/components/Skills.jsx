@@ -120,6 +120,16 @@ class Skills extends Component {
                     <span className="skills_percentage w-80"></span>
                   </div>
                 </div>
+                <div className="skills_data">
+                  <div className="skills_titles">
+                    <h3 className="skills_name">TypeScript</h3>
+                    <span className="skills_number"> 70%</span>
+                  </div>
+
+                  <div className="skills_bar">
+                    <span className="skills_percentage w-70"></span>
+                  </div>
+                </div>
 
                 <div className="skills_data">
                   <div className="skills_titles">
@@ -134,23 +144,12 @@ class Skills extends Component {
 
                 <div className="skills_data">
                   <div className="skills_titles">
-                    <h3 className="skills_name">HTML</h3>
-                    <span className="skills_number"> 90%</span>
+                    <h3 className="skills_name">Next.js</h3>
+                    <span className="skills_number"> 75%</span>
                   </div>
 
                   <div className="skills_bar">
-                    <span className="skills_percentage w-90"></span>
-                  </div>
-                </div>
-
-                <div className="skills_data">
-                  <div className="skills_titles">
-                    <h3 className="skills_name">CSS</h3>
-                    <span className="skills_number"> 70%</span>
-                  </div>
-
-                  <div className="skills_bar">
-                    <span className="skills_percentage w-70"></span>
+                    <span className="skills_percentage w-75"></span>
                   </div>
                 </div>
               </div>
@@ -213,12 +212,12 @@ class Skills extends Component {
 
                 <div className="skills_data">
                   <div className="skills_titles">
-                    <h3 className="skills_name">Flask</h3>
-                    <span className="skills_number"> 80%</span>
+                    <h3 className="skills_name">MongoDB</h3>
+                    <span className="skills_number"> 70%</span>
                   </div>
 
                   <div className="skills_bar">
-                    <span className="skills_percentage w-80"></span>
+                    <span className="skills_percentage w-70"></span>
                   </div>
                 </div>
 
@@ -230,17 +229,6 @@ class Skills extends Component {
 
                   <div className="skills_bar">
                     <span className="skills_percentage w-90"></span>
-                  </div>
-                </div>
-
-                <div className="skills_data">
-                  <div className="skills_titles">
-                    <h3 className="skills_name">MongoDB</h3>
-                    <span className="skills_number"> 70%</span>
-                  </div>
-
-                  <div className="skills_bar">
-                    <span className="skills_percentage w-70"></span>
                   </div>
                 </div>
               </div>
