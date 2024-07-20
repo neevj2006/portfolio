@@ -116,7 +116,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <section className="contact section" id="contact">
+      <section className="contact section main" id="contact">
         <h2 data-heading="Get in touch" className="section_title">
           Contact Me
         </h2>
