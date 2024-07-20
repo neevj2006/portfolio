@@ -127,10 +127,8 @@ class Contact extends Component {
               <div className="contact_card" data-aos="fade-right">
                 <i className="uil uil-envelope-edit contact_icon"></i>
                 <h3 className="contact_card-title">Email</h3>
-                <span className="contact_card-data">
-                  neev0511jain@gmail.com
-                </span>
-                <a href="mailto:neev0511jain@gmail.com">
+                <span className="contact_card-data">neevj2006@gmail.com</span>
+                <a href="mailto:neevj2006@gmail.com">
                   <span className="contact_button">
                     Write me
                     <i className="uil uil-arrow-right contact_button-icon"></i>
