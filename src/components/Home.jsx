@@ -26,7 +26,7 @@ class Home extends Component {
                 <i className="uil uil-github"></i>
               </a>
               <a
-                href="https://instagram.com/neev0511jain/"
+                href="https://instagram.com/neevj2006/"
                 target="_blank"
                 className="home_social-link"
               >
@@ -71,13 +71,13 @@ class Home extends Component {
               </div>
             </a>
 
-            <a href="https://www.instagram.com/neev0511jain/">
+            <a href="https://www.instagram.com/neevj2006/">
               <div className="info_item">
                 <i className="uil uil-instagram info_icon"></i>
 
                 <div>
                   <h3 className="info_title">Instagram</h3>
-                  <span className="info_subtitle">@neev0511jain</span>
+                  <span className="info_subtitle">@neevj2006</span>
                 </div>
               </div>
             </a>

@@ -141,8 +141,8 @@ class Contact extends Component {
               <div className="contact_card" data-aos="fade-right">
                 <i className="uil uil-instagram contact_icon"></i>
                 <h3 className="contact_card-title">Instagram</h3>
-                <span className="contact_card-data">@neev0511jain</span>
-                <a href="https://instagram.com/neev0511jain/">
+                <span className="contact_card-data">@neevj2006</span>
+                <a href="https://instagram.com/neevj2006/">
                   <span className="contact_button">
                     Write me
                     <i className="uil uil-arrow-right contact_button-icon"></i>

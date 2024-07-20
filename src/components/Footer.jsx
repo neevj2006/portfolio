@@ -45,7 +45,7 @@ class Footer extends Component {
                 <i className="uil uil-github"></i>
               </a>
               <a
-                href="https://instagram.com/neev0511jain/"
+                href="https://instagram.com/neevj2006/"
                 target="_blank"
                 className="footer_social"
               >
