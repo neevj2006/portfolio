@@ -31,14 +31,14 @@ class Footer extends Component {
 
             <div className="footer_socials">
               <a
-                href="https://www.linkedin.com/in/neev-jain-898819210/"
+                href="https://www.linkedin.com/in/neevj2006/"
                 target="_blank"
                 className="footer_social"
               >
                 <i className="uil uil-linkedin"></i>
               </a>
               <a
-                href="https://github.com/neevjain2006"
+                href="https://github.com/neevj2006"
                 target="_blank"
                 className="footer_social"
               >

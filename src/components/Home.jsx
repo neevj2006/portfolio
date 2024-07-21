@@ -12,14 +12,14 @@ class Home extends Component {
             <span className="home_social-follow">Follow Me</span>
             <div className="home_social-links">
               <a
-                href="https://www.linkedin.com/in/neev-jain-898819210/"
+                href="https://www.linkedin.com/in/neevj2006/"
                 target="_blank"
                 className="home_social-link"
               >
                 <i className="uil uil-linkedin"></i>
               </a>
               <a
-                href="https://github.com/neevjain2006"
+                href="https://github.com/neevj2006"
                 target="_blank"
                 className="home_social-link"
               >
@@ -49,7 +49,7 @@ class Home extends Component {
           </div>
 
           <div className="my_info">
-            <a href="https://www.linkedin.com/in/neev-jain-898819210/">
+            <a href="https://www.linkedin.com/in/neevj2006/">
               <div className="info_item">
                 <i className="uil uil-linkedin info_icon"></i>
 
@@ -60,13 +60,13 @@ class Home extends Component {
               </div>
             </a>
 
-            <a href="https://github.com/neevjain2006">
+            <a href="https://github.com/neevj2006">
               <div className="info_item">
                 <i className="uil uil-github info_icon"></i>
 
                 <div>
                   <h3 className="info_title">Github</h3>
-                  <span className="info_subtitle">neevjain2006</span>
+                  <span className="info_subtitle">neevj2006</span>
                 </div>
               </div>
             </a>

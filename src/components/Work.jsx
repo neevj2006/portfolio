@@ -13,7 +13,7 @@ class Work extends Component {
         description:
           "Created a Voice Assistant using Python. Programmed a virtual assistant with speech recognition and voice capabilities using Python. Integrated open-source libraries to enable conversational interactions.",
         skills: [{ name: "Pyhton", id: "1" }],
-        url: "https://github.com/neevjain2006/Gideon",
+        url: "https://github.com/neevj2006/Gideon",
       },
       {
         id: 2,
@@ -27,7 +27,7 @@ class Work extends Component {
           { name: "Express", id: "4" },
           { name: "MongoDB", id: "5" },
         ],
-        url: "https://neevjain2006.github.io/Expense-Tracker-frontend/",
+        url: "https://neevj2006.github.io/Expense-Tracker-frontend/",
       },
       {
         id: 3,
@@ -39,7 +39,7 @@ class Work extends Component {
         ],
         description:
           "Developed an app to email daily news using various news APIs and becoming a one-stop shop app. Automated the process to run daily and send a customizable email digest.",
-        url: "https://github.com/neevjain2006/Newsletter/",
+        url: "https://github.com/neevj2006/Newsletter/",
       },
       {
         id: 4,
@@ -53,7 +53,7 @@ class Work extends Component {
           { name: "Express", id: "10" },
           { name: "MongoDB", id: "11" },
         ],
-        url: "https://neevjain2006.github.io/To-Do-frontend/",
+        url: "https://neevj2006.github.io/To-Do-frontend/",
       },
       {
         id: 5,
@@ -62,7 +62,7 @@ class Work extends Component {
         description:
           "Unlocked the power of facial recognition with a Python application that goes through folders to identify photos featuring the user's face, leveraging advanced algorithms to precisely match unique facial features.",
         skills: [{ name: "Python", id: "12" }],
-        url: "https://github.com/neevjain2006/Face-Finder",
+        url: "https://github.com/neevj2006/Face-Finder",
       },
       {
         id: 6,
@@ -76,7 +76,7 @@ class Work extends Component {
           { name: "Express", id: "15" },
           { name: "MongoDB", id: "16" },
         ],
-        url: "https://neevjain2006.github.io/Calendar-frontend/",
+        url: "https://neevj2006.github.io/Calendar-frontend/",
       },
     ],
   };

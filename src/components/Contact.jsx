@@ -152,7 +152,7 @@ class Contact extends Component {
                 <i className="uil uil-linkedin-alt contact_icon"></i>
                 <h3 className="contact_card-title">Linked In</h3>
                 <span className="contact_card-data">Neev Jain</span>
-                <a href="https://www.linkedin.com/in/neev-jain-898819210/">
+                <a href="https://www.linkedin.com/in/neevj2006/">
                   <span className="contact_button">
                     Write me
                     <i className="uil uil-arrow-right contact_button-icon"></i>
