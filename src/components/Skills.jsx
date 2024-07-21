@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { IconHub } from "./IconHub";
 
 class Skills extends Component {
   state = {
@@ -258,6 +259,7 @@ class Skills extends Component {
             </div>
           </div>
         </div>
+        <IconHub />
       </section>
     );
   }
