@@ -19,20 +19,21 @@ function App() {
   return (
     <div>
       <NavBar />
+      <div>
+        <Home />
 
-      <Home />
+        <About>
+          <Qualifications />
+        </About>
 
-      <About>
-        <Qualifications />
-      </About>
+        <Skills />
 
-      <Skills />
+        <Work />
 
-      <Work />
+        <Contact />
 
-      <Contact />
-
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
