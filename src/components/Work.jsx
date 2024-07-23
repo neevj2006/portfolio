@@ -161,7 +161,8 @@ class Work extends Component {
                 </div>
                 <a href={project.url}>
                   <span className="work_button">
-                    Code
+                    {project.type === "app" ? "Code" : "Demo"}
+
                     <i className="uil uil-arrow-right work_button-icon"></i>
                   </span>
                 </a>

@@ -34,18 +34,22 @@ class Home extends Component {
               </a>
             </div>
           </div>
-          <img src={homeImg} alt="home-img" className="home_img" />
-
-          <div className="home_data">
-            <h1 className="home_title">Hi, I'm Neev</h1>
-            <h3 className="home_subtitle">Student Developer</h3>
-            <p className="home_description">
-              I'm a student at Boston University studying Computer Engineering.
-            </p>
-            <a href="#about" className="button">
-              <i className="uil uil-user button_icon"></i>
-              More About Me
-            </a>
+          <div className="home_page">
+            <div className="home_img_wrapper">
+              <img src={homeImg} alt="home-img" className="home_img" />
+            </div>
+            <div className="home_data">
+              <h1 className="home_title">Hi, I'm Neev</h1>
+              <h3 className="home_subtitle">Student Developer</h3>
+              <p className="home_description">
+                I'm a student at Boston University studying Computer
+                Engineering.
+              </p>
+              <a href="#about" className="button">
+                <i className="uil uil-user button_icon"></i>
+                More About Me
+              </a>
+            </div>
           </div>
 
           <div className="my_info">
