@@ -16,18 +16,20 @@ class Work extends Component {
         url: "https://github.com/neevj2006/Gideon",
       },
       {
-        id: 2,
+        id: 4,
         type: "web",
-        title: "Expense Tracker",
+        title: "Discord Clone",
         description:
-          "A comprehensive web application designed to monitor and analyze expenses, featuring a user-friendly interface.",
+          "A full-stack app that replicates the core functionalities of Discord. It features real-time messaging, DMs, voice and video chat",
         skills: [
-          { name: "React", id: "2" },
-          { name: "Node", id: "3" },
-          { name: "Express", id: "4" },
-          { name: "MongoDB", id: "5" },
+          { name: "React", id: "8" },
+          { name: "Next", id: "9" },
+          { name: "TypeScript", id: "10" },
+          { name: "Prisma", id: "11" },
+          { name: "Socket.io", id: "13" },
+          { name: "Tailwind", id: "14" },
         ],
-        url: "https://neevj2006.github.io/Expense-Tracker-frontend/",
+        url: "https://discord-production-3e9b.up.railway.app/",
       },
       {
         id: 3,
