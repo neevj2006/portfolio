@@ -112,6 +112,10 @@ input {
   outline: none;
 }
 
+.skin {
+  color: var(--skin-color);
+}
+
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 1250px;
@@ -1049,7 +1053,6 @@ textarea.input {
   margin-top: 4.5rem;
 }
 
-.footer_title,
 .footer_subtitle,
 .footer_link,
 .footer_social {

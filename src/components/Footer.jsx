@@ -7,7 +7,7 @@ class Footer extends Component {
         <div className="footer_bg">
           <div className="footer_container container grid">
             <div>
-              <h1 className="footer_title">Neev</h1>
+              <h1 className="skin footer_title">Neev</h1>
               <span className="footer_subtitle">Student Developer</span>
             </div>
 
