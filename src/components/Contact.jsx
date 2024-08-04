@@ -23,6 +23,7 @@ class Contact extends Component {
     error: {
       detailsReq: false,
     },
+    success: "",
   };
 
   validate = () => {
@@ -53,33 +54,35 @@ class Contact extends Component {
         message: message.value,
       }),
     };
+    this.setState({
+      success: "Sending Message...",
+      formInput: {
+        name: {
+          focus: false,
+          value: "",
+        },
+        phone: {
+          focus: false,
+          value: "",
+        },
+        email: {
+          focus: false,
+          value: "",
+        },
+        message: {
+          focus: false,
+          value: "",
+        },
+      },
+    });
+
     fetch(
       "https://portfolio-backend-nxm5.onrender.com/addSiteMessage",
       requestOptions
     )
       .then((response) => {
-        console.log(response.json);
-        alert("Message Sent");
-        this.setState({
-          formInput: {
-            name: {
-              focus: false,
-              value: "",
-            },
-            phone: {
-              focus: false,
-              value: "",
-            },
-            email: {
-              focus: false,
-              value: "",
-            },
-            message: {
-              focus: false,
-              value: "",
-            },
-          },
-        });
+        console.log(response);
+        this.setState({ success: "Message Sent!" });
       })
       .catch((err) => {
         console.log(err);
@@ -166,6 +169,17 @@ class Contact extends Component {
               <div className="errors">
                 <div className={this.state.error.detailsReq ? "show" : "hide"}>
                   * All details are mandatory
+                </div>
+                <div
+                  className={
+                    this.state.success === ""
+                      ? "hide"
+                      : this.state.success === "Sending Message..."
+                      ? "show yellow"
+                      : "show green"
+                  }
+                >
+                  {this.state.success}
                 </div>
               </div>
               <div

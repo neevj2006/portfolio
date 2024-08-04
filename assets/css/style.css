@@ -992,6 +992,14 @@ textarea.input {
   color: var(--skin-color);
 }
 
+.green {
+  color: rgb(56, 222, 56);
+}
+
+.yellow {
+  color: rgb(255, 255, 20);
+}
+
 .show {
   display: block;
 }
