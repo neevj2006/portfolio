@@ -4,6 +4,7 @@ import mixitup from "mixitup";
 import Popup from "./Popup";
 import VoiceAssistant from "../../assets/img/voice_assistant.webp";
 import DiscordClone from "../../assets/img/discord.png";
+import GenZ from "../../assets/img/genz.png";
 class Work extends Component {
   state = {
     filter: "all",
@@ -34,6 +35,16 @@ class Work extends Component {
           "Tailwind",
         ],
         url: "https://discord-production-3e9b.up.railway.app/",
+      },
+      {
+        id: 3,
+        type: "app",
+        title: "GenZ Script",
+        image: GenZ,
+        description:
+          "A unique programming language that replaces traditional keywords with Gen Z slang, making coding more relatable and fun for younger generations. Developed using Python, this innovative project bridges the gap between modern culture and technology, encouraging creativity and engagement in the programming world.",
+        skills: ["Python"],
+        url: "https://github.com/neevj2006/GenZ-Script/",
       },
       // {
       //   id: 3,
