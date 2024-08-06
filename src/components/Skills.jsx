@@ -33,7 +33,7 @@ class Skills extends Component {
 
               <div>
                 <h1 className="skills_title">Frontend</h1>
-                <span className="skills_subtitle">More than 2 years</span>
+                <span className="skills_subtitle">More than 5 years</span>
               </div>
 
               <i className="uil uil-angle-down skills_arrow"></i>
@@ -53,7 +53,7 @@ class Skills extends Component {
 
               <div>
                 <h1 className="skills_title">Software</h1>
-                <span className="skills_subtitle">More than 5 years</span>
+                <span className="skills_subtitle">More than 3 years</span>
               </div>
 
               <i className="uil uil-angle-down skills_arrow"></i>
