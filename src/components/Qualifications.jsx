@@ -66,23 +66,6 @@ class Qualifications extends Component {
                   <i className="uil uil-calendar-alt"></i>April 2021 - May 2021
                 </span>
               </div>
-              <div
-                className="timeline_item"
-                data-aos="flip-up"
-                data-aos-duration="450"
-              >
-                <div className="circle_dot"></div>
-                <h3 className="timeline_title">SUPROS - Intern</h3>
-                <div className="timeline_text">
-                  Built a chatbot using online tools & python; Optimized codes &
-                  simplified algorithms; Ensured communication within the team &
-                  reporting to Mr. Amandeep Gulati (Software Engineer at Google
-                  & Amazon).
-                </div>
-                <span className="timeline_date">
-                  <i className="uil uil-calendar-alt"></i>July 2021- August 2021
-                </span>
-              </div>
             </div>
           </div>
         </div>
