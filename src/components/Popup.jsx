@@ -25,7 +25,7 @@ class Popup extends Component {
                 </div>
                 <a href={project.url}>
                   <span className="work_button">
-                    {project.type === "app" ? "Code" : "Demo"}
+                    {project.makeDemo ? "Demo" : "Code"}
 
                     <i className="uil uil-arrow-right work_button-icon"></i>
                   </span>

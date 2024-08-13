@@ -34,7 +34,7 @@ class Work extends Component {
           "Socket.io",
           "Tailwind",
         ],
-        url: "https://discord-production-3e9b.up.railway.app/",
+        url: "https://github.com/neevj2006/discord-clone",
       },
       {
         id: 3,
