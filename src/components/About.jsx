@@ -3,7 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from "react";
 import resume from "../../assets/img/Resume.pdf";
-import aboutImg from "../../assets/img/about-img.png";
+import aboutImg from "../../assets/img/pic.jpeg";
 
 class About extends Component {
   handleResume = () => {
