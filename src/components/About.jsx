@@ -23,13 +23,18 @@ class About extends Component {
               Hi, I'm Neev, Student at Boston University
             </h3>
             <p className="about_description">
-              With a robust foundation in computer science and mathematics
-              cultivated through coding, research, and enrichment programs, I
-              aspire to further develop my technical abilities and leadership
-              skills in an intellectually stimulating undergraduate environment.
-              My academic excellence, passion for technology, and multifaceted
-              experience make me well-prepared to positively contribute to the
-              field.
+              I’m passionate about building intelligent systems that bridge
+              software engineering and artificial intelligence. My interests lie
+              in machine learning, computer vision, and automation, where I
+              enjoy transforming ideas into data-driven, real-world solutions.
+              I’ve developed projects ranging from an AI-powered voice assistant
+              and a personalized learning platform to a vehicle speed detection
+              system using YOLO and DeepSORT. Through internships I’ve applied
+              AI and automation tools like Python, OpenCV, and Make.com to
+              optimize workflows and operational systems. I’m always eager to
+              explore new applications of AI in automation, data analysis, and
+              intelligent systems with a focus on designing scalable, efficient,
+              and human-centered technology.
             </p>
             <a
               className="button"
