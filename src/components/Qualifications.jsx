@@ -25,7 +25,7 @@ class Qualifications extends Component {
                   <br />
                   GPA: 3.85/4.0
                   <br />
-                  College of Engineering Dean's List
+                  College of Engineering Dean&apos;s List
                 </div>
                 <span className="timeline_date">
                   <i className="uil uil-calendar-alt"></i>2024 - May 2027
