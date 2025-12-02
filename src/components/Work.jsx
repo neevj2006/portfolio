@@ -3,8 +3,11 @@ import { Component } from "react";
 import mixitup from "mixitup";
 import Popup from "./Popup";
 import VoiceAssistant from "../../assets/img/voice_assistant.webp";
+import Vehicle from "../../assets/img/vehicle.webp";
 import DiscordClone from "../../assets/img/discord.png";
 import GenZ from "../../assets/img/genz.png";
+import Research from "../../assets/img/research.png";
+import PLA from "../../assets/img/pla.png";
 class Work extends Component {
   state = {
     filter: "all",
@@ -12,11 +15,11 @@ class Work extends Component {
       {
         id: 1,
         type: "app",
-        title: "Voice Assistant",
+        title: "Gideon",
         image: VoiceAssistant,
         description:
-          "Created a virtual assistant using Python, equipped with speech recognition and voice capabilities. Integrated open-source libraries to enable conversational interactions and provide a seamless user experience. Enhanced with custom commands and responses tailored to user needs.",
-        skills: ["Python"],
+          "Built an AI-powered voice assistant in Python using speech recognition and NLP for natural interaction. Utilized transformer-based NLP models to improve intent recognition and conversational accuracy. Created custom command classification and response generation pipelines to expand assistant functionality.Optimized performance by Fine-tuned speech modules for faster and more reliable user responses.",
+        skills: ["Python", "NLP"],
         url: "https://github.com/neevj2006/Gideon",
       },
       {
@@ -39,6 +42,44 @@ class Work extends Component {
       {
         id: 3,
         type: "app",
+        title: "Vehicle Speed Detection System",
+        image: Vehicle,
+        description:
+          "A multi-object tracking system built using YOLO and DeepSORT to detect and track cars from recorded video footage. Estimates vehicle speeds by converting pixel displacement to real-world units through camera calibration. Implemented in Python with OpenCV, integrating deep learning, signal processing, and data visualization techniques for accurate speed detection.",
+        skills: ["Python", "OpenCV", "YOLO", "DeepSORT", "Computer Vision"],
+        url: "https://github.com/neevj2006/Vehicle_Speed_Detection",
+      },
+      {
+        id: 4,
+        type: "web",
+        title: "Personalized Learning Assistant",
+        image: PLA,
+        description:
+          "An AI-driven adaptive learning web app that uses machine learning models to personalize lessons and quizzes based on user learning patterns. Features a recommendation engine that delivers tailored content and feedback using learner performance data, with predictive analytics modules that track knowledge growth and suggest targeted study materials. Applies data preprocessing and model evaluation techniques to improve learning outcome predictions and user engagement.",
+        skills: ["Machine Learning", "Python", "Data Analytics", "React"],
+        url: "",
+      },
+      {
+        id: 5,
+        type: "Research",
+        title: "Cryptojacking Attack Analysis",
+        image: Research,
+        description:
+          "Conducted an in-depth research study on Cryptojacking attacks under the guidance of Professor Maria Konte at Georgia Tech. Reviewed literature and case studies examining the impact of Cryptojacking on system security and performance. Evaluated attack vectors and defense methods against unauthorized cryptocurrency mining, contributing to understanding of emerging cybersecurity threats.",
+        skills: [
+          "Cybersecurity",
+          "Research",
+          "Security Analysis",
+          "Cryptography",
+          "Technical Writing",
+          "Literature Review",
+        ],
+        url: "https://drive.google.com/file/d/1EQ2Ua6cbXV0A_PMKGPFlKaNDWRfcHd6z/view?usp=sharing",
+        makeURL: true,
+      },
+      {
+        id: 6,
+        type: "app",
         title: "GenZ Script",
         image: GenZ,
         description:
@@ -46,46 +87,6 @@ class Work extends Component {
         skills: ["Python"],
         url: "https://github.com/neevj2006/GenZ-Script/",
       },
-      // {
-      //   id: 3,
-      //   type: "app",
-      //   title: "Newsletter",
-      //   image: Newsletter,
-      //   description:
-      //     "Developed an app to email daily news using various news APIs, becoming a one-stop shop for daily updates. Automated the process to run daily and send a customizable email digest to users. Implemented user preferences for topic selection and delivery time.",
-      //   skills: ["Python", "MySQL"],
-      //   url: "https://github.com/neevj2006/Newsletter/",
-      // },
-      // {
-      //   id: 4,
-      //   type: "web",
-      //   title: "To-Do List",
-      //   image: ToDoList,
-      //   description:
-      //     "Built a simple and intuitive web application that allows users to create, manage, and track their daily tasks and to-do items, enhancing productivity and organization.",
-      //   skills: ["React", "Node", "Express", "MongoDB"],
-      //   url: "https://neevj2006.github.io/To-Do-frontend/",
-      // },
-      // {
-      //   id: 5,
-      //   type: "app",
-      //   title: "Face Finder",
-      //   image: FaceFinder,
-      //   description:
-      //     "Unlocked the power of facial recognition with a Python application that scans folders to identify photos featuring the user's face, leveraging advanced algorithms to precisely match unique facial features.",
-      //   skills: ["Python"],
-      //   url: "https://github.com/neevj2006/Face-Finder",
-      // },
-      // {
-      //   id: 6,
-      //   type: "web",
-      //   title: "Calendar",
-      //   image: Calendar,
-      //   description:
-      //     "Developed a user-friendly calendar application that streamlines scheduling and task management for school and coding courses, helping users stay organized and manage their time efficiently.",
-      //   skills: ["React", "Node", "Express", "MongoDB"],
-      //   url: "https://neevj2006.github.io/Calendar-frontend/",
-      // },
     ],
     popup: false,
     popupContent: {},
@@ -170,6 +171,17 @@ class Work extends Component {
           >
             App
           </span>
+          <span
+            className={
+              this.state.filter === ".research"
+                ? "work_item active-work"
+                : "work_item"
+            }
+            data-filter=".research"
+            onClick={() => this.handleFilterWork(".research")}
+          >
+            Research
+          </span>
         </div>
 
         <div className="work_container container grid">
@@ -180,7 +192,9 @@ class Work extends Component {
                 className={
                   project.type === "app"
                     ? "work_card mix app"
-                    : "work_card mix web"
+                    : project.type === "web"
+                    ? "work_card mix web"
+                    : "work_card mix research"
                 }
               >
                 <div className="work_thumbnail">

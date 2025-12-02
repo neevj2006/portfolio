@@ -23,13 +23,14 @@ class Popup extends Component {
                     return <span key={i}>{skill}</span>;
                   })}
                 </div>
-                <a href={project.url}>
-                  <span className="work_button">
-                    {project.makeDemo ? "Demo" : "Code"}
-
-                    <i className="uil uil-arrow-right work_button-icon"></i>
-                  </span>
-                </a>
+                {project.url && (
+                  <a href={project.url}>
+                    <span className="work_button">
+                      {project.makeURL ? "URL" : "Code"}
+                      <i className="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                  </a>
+                )}
               </div>
             </div>
           </div>
