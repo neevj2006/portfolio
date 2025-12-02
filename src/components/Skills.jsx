@@ -73,7 +73,7 @@ class Skills extends Component {
 
               <div>
                 <h1 className="skills_title">Backend</h1>
-                <span className="skills_subtitle">More than 2 years</span>
+                <span className="skills_subtitle">More than 4 years</span>
               </div>
 
               <i className="uil uil-angle-down skills_arrow"></i>
@@ -166,6 +166,26 @@ class Skills extends Component {
               id="software"
             >
               <div className="skills_list grid">
+                <div className="skills_data">
+                  <div className="skills_titles">
+                    <h3 className="skills_name">C++</h3>
+                    <span className="skills_number"> 70%</span>
+                  </div>
+
+                  <div className="skills_bar">
+                    <span className="skills_percentage w-70"></span>
+                  </div>
+                </div>
+                <div className="skills_data">
+                  <div className="skills_titles">
+                    <h3 className="skills_name">Java</h3>
+                    <span className="skills_number"> 80%</span>
+                  </div>
+
+                  <div className="skills_bar">
+                    <span className="skills_percentage w-80"></span>
+                  </div>
+                </div>
                 <div className="skills_data">
                   <div className="skills_titles">
                     <h3 className="skills_name">Python</h3>
