@@ -23,7 +23,7 @@ class Qualifications extends Component {
                 <div className="timeline_text">
                   B.Sc. in Computer Engineering
                   <br />
-                  GPA: 3.85/4.0
+                  GPA: 3.77/4.0
                   <br />
                   College of Engineering Dean&apos;s List
                 </div>
