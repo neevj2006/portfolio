@@ -1,4 +1,4 @@
-# Neev Jain — Portfolio
+# Neev Jain - Portfolio
 
 An interactive portfolio presenting my work across web development, artificial intelligence, and machine learning.
 
@@ -38,15 +38,15 @@ Additional work includes a Discord clone, cryptojacking attack analysis, and Gen
 
 ## Technology
 
-| Area | Tools |
-| --- | --- |
-| Framework | Next.js 16 App Router |
-| Interface | React 19, TypeScript |
-| Animation | Anime.js |
-| Styling | CSS, Tailwind CSS PostCSS integration |
-| Fonts | Geist Sans, Geist Mono |
-| Images | Next.js Image |
-| Testing | Node.js test runner |
+| Area         | Tools                                 |
+| ------------ | ------------------------------------- |
+| Framework    | Next.js 16 App Router                 |
+| Interface    | React 19, TypeScript                  |
+| Animation    | Anime.js                              |
+| Styling      | CSS, Tailwind CSS PostCSS integration |
+| Fonts        | Geist Sans, Geist Mono                |
+| Images       | Next.js Image                         |
+| Testing      | Node.js test runner                   |
 | Code quality | ESLint, Next.js Core Web Vitals rules |
 
 ## Project structure

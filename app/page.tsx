@@ -232,7 +232,7 @@ export default function Home() {
           duration: 1050,
           ease: "outExpo",
         }),
-        animate(".hero-eyebrow, .hero-intro, .hero-actions", {
+        animate(".hero-eyebrow, .hero-role, .hero-tagline, .hero-intro, .hero-actions", {
           opacity: { from: 0 },
           y: { from: "1.5rem" },
           delay: stagger(110, { start: 220 }),
@@ -319,10 +319,13 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow hero-eyebrow"><span className="live-dot" /> Boston-based builder · BU CE ’27</div>
           <h1>
-            <span className="serif-line">Engineering</span>
-            <span>intelligence</span>
-            <span className="hero-last"><em>into</em> interfaces.</span>
+            <span>Neev</span>
+            <span>Jain</span>
           </h1>
+          <div className="hero-role" aria-label="Web developer and AI/ML engineer">
+            <span>Web Developer</span><strong>×</strong><span>AI/ML Engineer</span>
+          </div>
+          <p className="hero-tagline">Engineering intelligence into interfaces.</p>
           <p className="hero-intro">
             I&apos;m <strong>Neev Jain</strong>, a web developer and AI/ML engineer building systems where thoughtful interfaces meet measurable machine intelligence.
           </p>
