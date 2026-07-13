@@ -253,8 +253,8 @@ h1, h2, h3, p { margin-top: 0; }
 
 .featured-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.25rem; perspective: 1200px; }
 .project-card { --rx: 0deg; --ry: 0deg; position: relative; min-height: 600px; padding: 1.35rem; background: rgba(11,23,27,.86); border: 1px solid var(--line); overflow: hidden; transform: rotateX(var(--rx)) rotateY(var(--ry)); transform-style: preserve-3d; transition: transform .18s ease, border-color .3s ease, background .3s ease, opacity .8s ease; }
-.project-card:nth-child(1) { grid-column: span 7; }
-.project-card:nth-child(2) { grid-column: span 5; }
+.project-card:nth-child(1),
+.project-card:nth-child(2) { grid-column: span 6; }
 .project-card:nth-child(3) { grid-column: 3 / span 8; min-height: 520px; }
 .project-card:hover, .project-card:focus-visible { border-color: rgba(86,230,225,.62); background: rgba(13,30,35,.96); }
 .project-card::after { content: attr(data-index); position: absolute; right: -.05em; bottom: -.18em; z-index: -1; color: color-mix(in srgb, var(--accent) 5%, transparent); font-size: 18rem; font-weight: 800; letter-spacing: -.14em; line-height: 1; }
