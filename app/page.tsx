@@ -15,7 +15,7 @@ const featuredProjects = [
       "A multi-object tracking system that detects vehicles in recorded footage and estimates real-world speed from calibrated pixel displacement.",
     tags: ["Python", "OpenCV", "YOLO", "DeepSORT"],
     visualSteps: ["Detect", "Track", "Estimate"],
-    href: "https://github.com/neevj2006",
+    githubHref: "https://github.com/neevj2006",
     tone: "cyan",
   },
   {
@@ -28,25 +28,27 @@ const featuredProjects = [
       "An AI-powered voice assistant with speech recognition, transformer-based intent understanding, custom command classification, and response generation.",
     tags: ["Python", "Speech recognition", "NLP", "Transformers"],
     visualSteps: ["Listen", "Understand", "Respond"],
-    href: "https://github.com/neevj2006",
+    githubHref: "https://github.com/neevj2006",
     tone: "coral",
   },
   {
     index: "03",
-    eyebrow: "Adaptive ML / education",
-    title: "Personalized Learning Assistant",
-    metric: "ML",
-    metricLabel: "adaptive learning",
+    eyebrow: "Monitoring / incident response",
+    title: "DevRelay",
+    metric: "178",
+    metricLabel: "automated checks",
     description:
-      "An adaptive learning web app that uses learner performance data to recommend lessons and quizzes, track knowledge growth, and target feedback.",
-    tags: ["Machine learning", "Recommendations", "Predictive analytics", "Web app"],
-    visualSteps: ["Observe", "Adapt", "Recommend"],
-    href: "https://github.com/neevj2006",
+      "A multi-tenant monitoring and incident-response SaaS with scheduled HTTP checks, policy-based outage confirmation, public status pages, and retry-safe email and webhook notifications.",
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Redis / BullMQ", "QStash"],
+    visualSteps: ["Monitor", "Confirm", "Respond"],
+    githubHref: "https://github.com/neevj2006/DevRelay",
+    productionHref: "https://devrelay-delta.vercel.app/",
     tone: "violet",
   },
 ];
 
 const archiveProjects = [
+  ["Personalized Learning Assistant", "Adaptive ML / education", "An adaptive learning web app that uses learner performance data to recommend lessons and quizzes, track knowledge growth, and target feedback."],
   ["Discord Clone", "Full stack", "Real-time messaging and user management with WebSockets and a database model for servers, channels, and messages."],
   ["Cryptojacking Attack Analysis", "Security research", "Attack-vector and defense analysis conducted under the guidance of Professor Maria Konte at Georgia Tech."],
   ["GenZ Script", "Language design", "A Python programming language with Gen Z-inspired keywords, built with a custom lexer and parser."],
@@ -382,12 +384,9 @@ export default function Home() {
 
         <div className="featured-grid">
           {featuredProjects.map((project) => (
-            <a
+            <article
               className={`project-card ${project.tone}`}
-              href={project.href}
               key={project.title}
-              target={project.href.startsWith("http") ? "_blank" : undefined}
-              rel={project.href.startsWith("http") ? "noreferrer" : undefined}
               onPointerMove={tilt}
               onPointerLeave={resetTilt}
               data-index={project.index}
@@ -411,9 +410,18 @@ export default function Home() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-                <span className="project-cta">Explore the system <ArrowIcon /></span>
+                <div className="project-actions">
+                  {project.productionHref ? (
+                    <a className="project-cta" href={project.productionHref} target="_blank" rel="noreferrer">
+                      View production <ArrowIcon />
+                    </a>
+                  ) : null}
+                  <a className="project-cta" href={project.githubHref} target="_blank" rel="noreferrer">
+                    View GitHub <ArrowIcon />
+                  </a>
+                </div>
               </div>
-            </a>
+            </article>
           ))}
         </div>
 
