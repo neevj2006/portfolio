@@ -22,7 +22,7 @@ test("is a native Next.js App Router project with Anime.js", async () => {
   assert.match(nextConfig, /unoptimized: true/);
 });
 
-test("uses only resume and LinkedIn facts with corrected contact details", async () => {
+test("uses the supplied student positioning and curated project lineup", async () => {
   const [page, css] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
@@ -38,11 +38,17 @@ test("uses only resume and LinkedIn facts with corrected contact details", async
   assert.match(page, /https:\/\/github\.com\/neevj2006\/DevRelay/);
   assert.match(page, /F1 Race Predictor/);
   assert.match(page, /https:\/\/github\.com\/neevj2006\/F1_Race_Predictor/);
-  assert.match(page, /Gideon — Voice Assistant/);
-  assert.match(page, /GenZ Script/);
+  assert.match(page, /Gideon/);
+  assert.match(page, /FraudGraph/);
+  assert.match(page, /SpecGuard/);
+  assert.match(page, /TransitPulse/);
   assert.match(page, /https:\/\/github\.com\/neevj2006/);
-  assert.match(page, /Certifications/);
-  assert.match(page, /IDEA→SYSTEM/);
+  assert.match(page, /Engineering practices/);
+  assert.match(page, /BUILD → TEST/);
+  assert.match(page, /SportsExcitement/);
+  assert.match(page, /B\.Sc\. Computer Engineering/);
+  assert.match(page, /Summer 2027/);
+  assert.doesNotMatch(page, /research-grade|AI Automation Intern|B\.E\.|TalentHome|Personalized Learning Assistant|Cryptojacking Attack Analysis|workflow improvement|View production|GenZ Script/);
   assert.match(page, /className="skill-block"/);
   assert.doesNotMatch(page, /orbit|500\+/i);
   assert.doesNotMatch(page, /92\.08|CIFAR-10|House Price Regression|3\.77|Expected May 2027/);
@@ -52,6 +58,7 @@ test("uses only resume and LinkedIn facts with corrected contact details", async
   await Promise.all([
     access(new URL("../public/neev-jain.jpeg", import.meta.url)),
     access(new URL("../public/Resume.pdf", import.meta.url)),
+    access(new URL("../public/Resume-FullStack.pdf", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
   ]);
 });

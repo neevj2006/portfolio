@@ -26,26 +26,26 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: base,
-    title: "Neev Jain - Web Developer × AI/ML Engineer",
+    title: "Neev Jain | AI/ML x Web Developer",
     description:
-      "Neev Jain builds intelligent products where thoughtful web interfaces meet real machine learning.",
+      "Boston University Computer Engineering student building machine learning tools and full-stack applications. Seeking Summer 2027 AI/ML and software engineering internships.",
     openGraph: {
-      title: "Neev Jain - Web Developer × AI/ML Engineer",
-      description: "Engineering intelligence into interfaces.",
+      title: "Neev Jain | AI/ML x Web Developer",
+      description: "Machine learning projects, full-stack applications, and the evidence behind them. Boston University. Summer 2027 internship candidate.",
       type: "website",
       images: [
         {
           url: new URL("/og.png", base),
           width: 1731,
           height: 909,
-          alt: "Neev Jain portfolio",
+          alt: "Neev Jain - AI/ML and web development portfolio",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Neev Jain — Web Developer × AI/ML Engineer",
-      description: "Engineering intelligence into interfaces.",
+      title: "Neev Jain | AI/ML x Web Developer",
+      description: "Machine learning projects, full-stack applications, and the evidence behind them. Boston University. Summer 2027 internship candidate.",
       images: [new URL("/og.png", base)],
     },
   };

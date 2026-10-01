@@ -7,88 +7,148 @@ import { animate, stagger } from "animejs";
 const featuredProjects = [
   {
     index: "01",
-    eyebrow: "Computer vision / tracking",
-    title: "Vehicle Speed Detection",
-    metric: "YOLO",
-    metricLabel: "+ DeepSORT tracking",
-    description:
-      "A multi-object tracking system that detects vehicles in recorded footage and estimates real-world speed from calibrated pixel displacement.",
-    tags: ["Python", "OpenCV", "YOLO", "DeepSORT"],
-    visualSteps: ["Detect", "Track", "Estimate"],
-    githubHref: "https://github.com/neevj2006",
-    tone: "cyan",
+    eyebrow: "Temporal graphs / fraud investigation",
+    title: "FraudGraph",
+    metric: "GRAPH",
+    metricLabel: "transaction evidence",
+    description: "A temporal graph fraud investigation workbench for ranking transactions, comparing model scores, and tracing shared infrastructure. The local staging release includes an analyst workspace and auditable case exports; benchmark limits are documented in the repository.",
+    tags: [
+      "Python",
+      "GraphSAGE",
+      "XGBoost",
+      "FastAPI",
+      "Next.js"
+    ],
+    facts: [
+      { label: "Model", value: "GraphSAGE + XGBoost" },
+      { label: "App", value: "FastAPI + Next.js" },
+      { label: "Status", value: "Local staging" }
+    ],
+    githubHref: "https://github.com/neevj2006/FraudGraph",
+    sourceLabel: "Source & setup",
+    tone: "cyan"
   },
   {
     index: "02",
-    eyebrow: "Voice AI / natural language",
-    title: "Gideon — Voice Assistant",
-    metric: "NLP",
-    metricLabel: "transformer intent",
-    description:
-      "An AI-powered voice assistant with speech recognition, transformer-based intent understanding, custom command classification, and response generation.",
-    tags: ["Python", "Speech recognition", "NLP", "Transformers"],
-    visualSteps: ["Listen", "Understand", "Respond"],
-    githubHref: "https://github.com/neevj2006",
-    tone: "coral",
+    eyebrow: "Code review / evidence retrieval",
+    title: "SpecGuard",
+    metric: "CITED",
+    metricLabel: "file-and-line evidence",
+    description: "A requirement-to-code review tool for JavaScript and TypeScript changes. It retrieves file-and-line evidence with BM25 and optional hybrid vector retrieval, with opt-in model assessments. This local development preview abstains when it cannot verify a claim and does not run reviewed code.",
+    tags: [
+      "Python",
+      "TypeScript",
+      "FastAPI",
+      "Next.js",
+      "BM25"
+    ],
+    facts: [
+      { label: "Retrieval", value: "BM25 + hybrid" },
+      { label: "Scope", value: "JS + TypeScript" },
+      { label: "Status", value: "Local preview" }
+    ],
+    githubHref: "https://github.com/neevj2006/SpecGuard",
+    sourceLabel: "Source & setup",
+    tone: "coral"
   },
   {
     index: "03",
     eyebrow: "Monitoring / incident response",
     title: "DevRelay",
-    metric: "178",
+    metric: "201",
     metricLabel: "automated checks",
-    description:
-      "A multi-tenant monitoring and incident-response SaaS with scheduled HTTP checks, policy-based outage confirmation, public status pages, and retry-safe email and webhook notifications.",
-    tags: ["Next.js", "NestJS", "PostgreSQL", "Redis / BullMQ", "QStash"],
-    visualSteps: ["Monitor", "Confirm", "Respond"],
+    description: "A multi-tenant monitoring and incident-response application with policy-based checks, public status pages, and retry-safe notifications. Release evidence covers 201 automated checks: 113 unit tests, 75 integration tests, and 13 Chromium scenarios. Explore the hosted demo with seeded data.",
+    tags: [
+      "Next.js",
+      "NestJS",
+      "PostgreSQL",
+      "Redis / BullMQ",
+      "QStash"
+    ],
+    facts: [
+      { label: "Stack", value: "Next.js + NestJS" },
+      { label: "Tests", value: "201 checks" },
+      { label: "Status", value: "Live demo" }
+    ],
     githubHref: "https://github.com/neevj2006/DevRelay",
-    productionHref: "https://devrelay-delta.vercel.app/",
+    sourceLabel: "Source & setup",
     tone: "violet",
+    demoHref: "https://devrelay-delta.vercel.app/"
   },
   {
     index: "04",
-    eyebrow: "Predictive modeling / motorsport",
+    eyebrow: "Race forecasting / model evaluation",
     title: "F1 Race Predictor",
     metric: "0.754",
-    metricLabel: "Spearman correlation",
-    description:
-      "A research-grade forecasting pipeline that predicts complete Formula 1 finishing orders before a race weekend and again after qualifying.",
-    tags: ["Python", "FastF1", "Ranking models", "Race simulation"],
-    visualSteps: ["Ingest", "Rank", "Simulate"],
+    metricLabel: "mean Spearman · 5 test races",
+    description: "A research MVP that predicts Formula 1 finishing orders before the weekend and after qualifying. The post-qualifying model averaged 0.754 Spearman correlation across five held-out 2026 races, rounds 7-11; rounds 1-6 were used for model selection. More unseen races are needed to judge performance.",
+    tags: [
+      "Python",
+      "FastF1",
+      "Ranking models",
+      "Race simulation"
+    ],
+    facts: [
+      { label: "Models", value: "Ranking + simulation" },
+      { label: "Result", value: "0.754 Spearman · 5 races" },
+      { label: "Status", value: "Research MVP" }
+    ],
     githubHref: "https://github.com/neevj2006/F1_Race_Predictor",
-    tone: "coral",
-  },
+    sourceLabel: "Source & results",
+    tone: "coral"
+  }
 ];
 
 const archiveProjects = [
-  ["Personalized Learning Assistant", "Adaptive ML / education", "An adaptive learning web app that uses learner performance data to recommend lessons and quizzes, track knowledge growth, and target feedback."],
-  ["Discord Clone", "Full stack", "Real-time messaging and user management with WebSockets and a database model for servers, channels, and messages."],
-  ["Cryptojacking Attack Analysis", "Security research", "Attack-vector and defense analysis conducted under the guidance of Professor Maria Konte at Georgia Tech."],
-  ["GenZ Script", "Language design", "A Python programming language with Gen Z-inspired keywords, built with a custom lexer and parser."],
+  {
+    name: "Gideon",
+    category: "Local assistant / voice + CLI",
+    detail: "A Windows personal assistant with voice and command-line interfaces, direct command handling, reminders, and SQLite storage. Model requests can use Ollama locally, with optional OpenAI or OpenRouter fallback. Runs locally; setup is in the repository.",
+    githubHref: "https://github.com/neevj2006/Gideon"
+  },
+  {
+    name: "TransitPulse",
+    category: "Transit data / full-stack",
+    detail: "An MBTA transit application built around static GTFS imports, GTFS-Realtime polling, feed diagnostics, and Server-Sent Events. Its interface distinguishes scheduled, live, and uncertain information. Explore routes, stops, and the map in the hosted demo.",
+    githubHref: "https://github.com/neevj2006/TransitPulse",
+    demoHref: "https://transit-pulse-web.vercel.app"
+  },
+  {
+    name: "Discord Clone",
+    category: "Real-time communication",
+    detail: "A Next.js communication app with server and channel management, real-time messaging through Socket.io, Prisma-backed data, and voice/video features through LiveKit. Source code and local setup are available on GitHub.",
+    githubHref: "https://github.com/neevj2006/discord-clone"
+  },
+  {
+    name: "Vehicle Speed Detection",
+    category: "Computer vision / video tracking",
+    detail: "A recorded-video workflow using YOLOv8, DeepSORT, and OpenCV to detect and track vehicles, then estimate speed from pixel displacement and a perspective-based pixel-to-meter conversion. Built for Google Colab; measurements depend on the video calibration.",
+    githubHref: "https://github.com/neevj2006/Vehicle_Speed_Detection"
+  }
 ];
 
 const skills = {
   intelligence: [
     "Python",
-    "Computer Vision",
-    "OpenCV",
-    "NLP",
-    "Transformers",
+    "pandas / NumPy",
+    "scikit-learn",
+    "PyTorch",
+    "GraphSAGE / XGBoost",
     "Model evaluation",
-    "Recommendations",
-    "Predictive analytics",
-    "Data visualization",
+    "BM25 / vector retrieval",
+    "Ollama / LLM APIs",
+    "OpenCV / YOLO"
   ],
   interfaces: [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Express",
-    "WebSockets",
-    "MongoDB",
-    "SQL",
-  ],
+    "TypeScript / JavaScript",
+    "React / Next.js",
+    "Node.js / NestJS",
+    "FastAPI",
+    "PostgreSQL / Prisma",
+    "Redis / BullMQ",
+    "WebSockets / SSE",
+    "Vitest / Playwright"
+  ]
 };
 
 function NetworkField() {
@@ -316,50 +376,53 @@ export default function Home() {
 
   return (
     <main>
-      <a className="skip-link" href="#work">Skip to selected work</a>
+      <a className="skip-link" href="#work">Skip to projects</a>
       <div className="scroll-progress" aria-hidden="true" />
       <NetworkField />
 
-      <nav className="site-nav" aria-label="Main navigation">
-        <a className="monogram" href="#top" aria-label="Neev Jain, home">NJ<span>.</span></a>
+      <nav className="site-nav" aria-label="Portfolio navigation">
+        <a className="monogram" href="#top" aria-label="Neev Jain, back to top">NJ<span>.</span></a>
         <div className="nav-links">
-          <a href="#work">Work</a>
+          <a href="#work">Projects</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
         </div>
-        <a className="nav-resume" href="/Resume.pdf" download>Résumé <ArrowIcon /></a>
+        <div>
+          <a className="nav-resume" href="/Resume.pdf" download="Neev_Jain_AI_ML_Resume.pdf" aria-label="Download Neev Jain AI/ML resume">AI/ML resume <ArrowIcon /></a>{" "}
+          <a className="nav-resume" href="/Resume-FullStack.pdf" download="Neev_Jain_FullStack_Resume.pdf" aria-label="Download Neev Jain full-stack resume">Full-stack resume <ArrowIcon /></a>
+        </div>
       </nav>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <div className="eyebrow hero-eyebrow"><span className="live-dot" /> Boston-based builder · BU CE ’27</div>
+          <div className="eyebrow hero-eyebrow"><span className="live-dot" /> Boston University · Computer Engineering</div>
           <h1>
             <span>Neev</span>
             <span>Jain</span>
           </h1>
-          <div className="hero-role" aria-label="Web developer and AI/ML engineer">
-            <span>Web Developer</span><strong>×</strong><span>AI/ML Engineer</span>
+          <div className="hero-role" aria-label="AI and machine learning, and web development">
+            <span>AI/ML</span><strong>x</strong><span>Web Developer</span>
           </div>
-          <p className="hero-tagline">Engineering intelligence into interfaces.</p>
+          <p className="hero-tagline">From models to working software.</p>
           <p className="hero-intro">
-            I&apos;m <strong>Neev Jain</strong>, a web developer and AI/ML engineer building systems where thoughtful interfaces meet measurable machine intelligence.
+            I am a Computer Engineering student at Boston University, building machine learning tools and full-stack applications. I am seeking Summer 2027 internships in AI/ML and full-stack software engineering.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="#work">Explore selected work <ArrowIcon /></a>
-            <a className="text-link" href="#about">More about me <span aria-hidden="true">↓</span></a>
+            <a className="button primary" href="#work">See my projects <ArrowIcon /></a>
+            <a className="text-link" href="#about">About my work <span aria-hidden="true">↓</span></a>
           </div>
         </div>
 
         <div className="portrait-stage" aria-label="Portrait of Neev Jain">
           <div className="portrait-grid" aria-hidden="true" />
           <div className="scan-beam" aria-hidden="true" />
-          <div className="data-label data-label-one" aria-hidden="true"><span>01</span> Computer vision</div>
-          <div className="data-label data-label-two" aria-hidden="true"><span>02</span> Web systems</div>
-          <div className="data-label data-label-three" aria-hidden="true"><span>03</span> Automation</div>
+          <div className="data-label data-label-one" aria-hidden="true"><span>01</span> Machine learning</div>
+          <div className="data-label data-label-two" aria-hidden="true"><span>02</span> Full-stack apps</div>
+          <div className="data-label data-label-three" aria-hidden="true"><span>03</span> Local AI tools</div>
           <div className="portrait-frame">
             <Image
               src="/neev-jain.jpeg"
-              alt="Neev Jain wearing glasses and a dark blazer"
+              alt="Neev Jain in glasses and a dark blazer"
               fill
               priority
               unoptimized
@@ -367,32 +430,31 @@ export default function Home() {
             />
           </div>
           <div className="portrait-meta">
-            <span>Computer Engineering</span>
+            <span>B.Sc. Computer Engineering</span>
             <span>Boston University</span>
           </div>
           <div className="impact-card">
-            <span>Working principle</span>
-            <strong>IDEA→SYSTEM</strong>
-            <small>Intelligent · useful · human-centered</small>
+            <span>Engineering approach</span>
+            <strong>BUILD → TEST</strong>
+            <small>Code · evidence · clear limits</small>
           </div>
         </div>
 
-        <div className="hero-proof" aria-label="Key facts">
-          <div><strong>30%</strong><span>workflow improvement</span></div>
-          <div><strong>3.7/4.0</strong><span>GPA / Dean&apos;s List</span></div>
-          <div><strong>8</strong><span>projects showcased</span></div>
-          <div><strong>DEC ’27</strong><span>expected graduation</span></div>
+        <div className="hero-proof" aria-label="Education facts">
+          <div><strong>BU</strong><span>Computer Engineering · ML concentration</span></div>
+          <div><strong>3.7/4.0</strong><span>GPA · Dean&apos;s List</span></div>
+          <div><strong>DEC&apos;27</strong><span>expected graduation</span></div>
         </div>
       </section>
 
       <div className="marquee" aria-hidden="true">
-        <div>PYTHON ✦ REACT ✦ COMPUTER VISION ✦ NEXT.JS ✦ NLP ✦ WEBSOCKETS ✦ OPENCV ✦ PYTHON ✦ REACT ✦ COMPUTER VISION ✦</div>
+        <div>PYTHON ✦ TYPESCRIPT ✦ MACHINE LEARNING ✦ NEXT.JS ✦ FASTAPI ✦ POSTGRESQL ✦ RETRIEVAL ✦ PYTHON ✦ TYPESCRIPT ✦ MACHINE LEARNING ✦</div>
       </div>
 
       <section className="section work-section" id="work">
         <header className="section-header" data-reveal>
-          <div><span className="section-number">01</span><span className="eyebrow">Selected systems</span></div>
-          <h2>Work that moves from <em>experiment</em> to evidence.</h2>
+          <div><span className="section-number">01</span><span className="eyebrow">Selected projects</span></div>
+          <h2>Models, tools, and <em>the software</em> around them.</h2>
         </header>
 
         <div className="featured-grid">
@@ -403,34 +465,35 @@ export default function Home() {
               onPointerMove={tilt}
               onPointerLeave={resetTilt}
               data-index={project.index}
+              aria-label={project.title}
+              aria-describedby={`project-facts-${project.index} project-metric-${project.index} project-description-${project.index}`}
               data-reveal
             >
               <div className="project-top"><span>{project.index}</span><span>{project.eyebrow}</span><ArrowIcon /></div>
               <div className="project-visual" aria-hidden="true">
                 <div className="visual-grid" />
-                <div className="signal-path">
-                  {project.visualSteps.map((step, index) => (
-                    <div className="signal-step" key={step}>
-                      <small>{String(index + 1).padStart(2, "0")}</small>
-                      <strong>{step}</strong>
-                      {index < project.visualSteps.length - 1 ? <span>→</span> : null}
+                <div className="signal-path" id={`project-facts-${project.index}`}>
+                  {project.facts.map((fact) => (
+                    <div className="signal-step" key={fact.label}>
+                      <small>{fact.label}</small>
+                      <strong>{fact.value}</strong>
                     </div>
                   ))}
                 </div>
-                <div className="metric"><strong>{project.metric}</strong><span>{project.metricLabel}</span></div>
+                <div className="metric" id={`project-metric-${project.index}`}><strong>{project.metric}</strong><span>{project.metricLabel}</span></div>
               </div>
               <div className="project-copy">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <h3><a href={project.githubHref} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} source on GitHub`}>{project.title}</a></h3>
+                <p id={`project-description-${project.index}`}>{project.description}</p>
                 <ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
                 <div className="project-actions">
-                  {project.productionHref ? (
-                    <a className="project-cta" href={project.productionHref} target="_blank" rel="noreferrer">
-                      View production <ArrowIcon />
+                  {project.demoHref ? (
+                    <a className="project-cta" href={project.demoHref} target="_blank" rel="noopener noreferrer" aria-label={`Open the ${project.title} live demo`}>
+                      Live demo <ArrowIcon />
                     </a>
                   ) : null}
-                  <a className="project-cta" href={project.githubHref} target="_blank" rel="noreferrer">
-                    View GitHub <ArrowIcon />
+                  <a className="project-cta" href={project.githubHref} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} source on GitHub`}>
+                    {project.sourceLabel} <ArrowIcon />
                   </a>
                 </div>
               </div>
@@ -439,13 +502,21 @@ export default function Home() {
         </div>
 
         <div className="archive" data-reveal>
-          <div className="archive-label"><span className="eyebrow">Project archive</span><span>From the résumé</span></div>
-          {archiveProjects.map(([name, category, detail], index) => (
+          <div className="archive-label"><span className="eyebrow">More projects</span><span>Code, setup, and demos</span></div>
+          {archiveProjects.map(({ name, category, detail, githubHref, demoHref }, index) => (
             <article className="archive-row" key={name}>
               <span>{String(index + 5).padStart(2, "0")}</span>
-              <h3>{name}</h3>
+              <h3><a href={githubHref} target="_blank" rel="noopener noreferrer" aria-label={`View ${name} source on GitHub`}>{name}</a></h3>
               <span>{category}</span>
-              <p>{detail}</p>
+              <p>
+                {detail}
+                <br />
+                {demoHref ? (
+                  <a className="text-link" href={demoHref} target="_blank" rel="noopener noreferrer" aria-label={`Open the ${name} live demo`}>Live demo <ArrowIcon /></a>
+                ) : (
+                  <a className="text-link" href={githubHref} target="_blank" rel="noopener noreferrer" aria-label={`View ${name} source on GitHub`}>GitHub <ArrowIcon /></a>
+                )}
+              </p>
             </article>
           ))}
         </div>
@@ -453,24 +524,24 @@ export default function Home() {
 
       <section className="section about-section" id="about">
         <header className="section-header compact" data-reveal>
-          <div><span className="section-number">02</span><span className="eyebrow">Capability lab</span></div>
-          <h2>One engineer, two connected modes.</h2>
+          <div><span className="section-number">02</span><span className="eyebrow">About &amp; skills</span></div>
+          <h2>Machine learning meets software engineering.</h2>
         </header>
         <div className="about-grid">
           <div className="about-statement" data-reveal>
-            <p className="large-copy">I build intelligent systems that bridge software engineering and artificial intelligence.</p>
-            <p>My interests span machine learning, computer vision, automation, and real-time web applications—with a focus on turning ideas into scalable, useful, and human-centered technology.</p>
-            <a className="text-link" href="mailto:neevj2006@gmail.com">Start a conversation <ArrowIcon /></a>
+            <p className="large-copy">I build models and the tools people use to work with them.</p>
+            <p>I study Computer Engineering at Boston University with a machine learning concentration. My projects span fraud investigation, evidence-grounded code review, local voice tools, and real-time web applications. I am interested in internships where I can contribute across model evaluation, backend systems, and user-facing software.</p>
+            <a className="text-link" href="mailto:neevj2006@gmail.com">Email me about an internship <ArrowIcon /></a>
           </div>
           <div className="skill-lab" data-reveal>
-            <div className="skill-switch" role="group" aria-label="Skill category">
-              <button className={skillMode === "intelligence" ? "active" : ""} onClick={() => setSkillMode("intelligence")} aria-pressed={skillMode === "intelligence"}>Intelligence</button>
-              <button className={skillMode === "interfaces" ? "active" : ""} onClick={() => setSkillMode("interfaces")} aria-pressed={skillMode === "interfaces"}>Interfaces</button>
+            <div className="skill-switch" role="group" aria-label="Technical skills">
+              <button className={skillMode === "intelligence" ? "active" : ""} onClick={() => setSkillMode("intelligence")} aria-pressed={skillMode === "intelligence"}>AI / ML</button>
+              <button className={skillMode === "interfaces" ? "active" : ""} onClick={() => setSkillMode("interfaces")} aria-pressed={skillMode === "interfaces"}>Full stack</button>
             </div>
             <div className="skill-panel" aria-live="polite">
               <div className="skill-panel-head">
-                <span>Active capability set</span>
-                <strong>{skillMode === "intelligence" ? "AI / ML" : "WEB"}</strong>
+                <span>Tools I use</span>
+                <strong>{skillMode === "intelligence" ? "MODELS & DATA" : "WEB & SYSTEMS"}</strong>
               </div>
               <div className="skill-blocks">
               {skills[skillMode].map((skill, index) => (
@@ -484,52 +555,53 @@ export default function Home() {
 
       <section className="section experience-section" id="experience">
         <header className="section-header compact" data-reveal>
-          <div><span className="section-number">03</span><span className="eyebrow">Experience</span></div>
-          <h2>Learning by shipping.</h2>
+          <div><span className="section-number">03</span><span className="eyebrow">Experience &amp; education</span></div>
+          <h2>What I have built, and where I am learning.</h2>
         </header>
         <div className="timeline" data-reveal>
           <article>
-            <div className="timeline-date">May — Aug 2025</div>
-            <div><span>SeamsFriendly · Delhi, India</span><h3>AI Automation Intern</h3></div>
-            <p>Built AI-assisted Python automation pipelines across inventory, order processing, and team communication, reducing manual handling and turnaround time by more than 30%.</p>
+            <div className="timeline-date">May 2026 - Present</div>
+            <div><span>SportsExcitement</span><h3>Software Engineering Intern</h3></div>
+            <p>Built user-facing features and backend integrations, worked on authentication flows, and added 43 automated tests. Contributed across React, Next.js, TypeScript, and Node.js in a collaborative engineering workflow.</p>
           </article>
           <article>
-            <div className="timeline-date">Apr — May 2022</div>
-            <div><span>TalentHome Solutions LLP · Mumbai</span><h3>Student Intern</h3></div>
-            <p>Collaborated in a four-person team on career-guidance web applications, contributing across front-end and back-end functionality.</p>
+            <div className="timeline-date">May 2025 - Apr 2026</div>
+            <div><span>SeamsFriendly · Delhi, India</span><h3>AI &amp; Machine Learning Intern</h3></div>
+            <p>Built workflow automation with self-hosted n8n and Claude agents, contributed to a Next.js/PostgreSQL order-management application, and migrated the Shopify storefront to Next.js.</p>
           </article>
           <article>
             <div className="timeline-date">Expected Dec 2027</div>
-            <div><span>Boston University · Boston</span><h3>B.E. Computer Engineering</h3></div>
-            <p>Dean&apos;s List student with a 3.7/4.0 GPA, focused on systems that connect software engineering, data, and intelligent behavior.</p>
+            <div><span>Boston University · Boston, MA</span><h3>B.Sc. Computer Engineering</h3></div>
+            <p>Machine learning concentration. GPA: 3.7/4.0. Dean&apos;s List. Building a foundation across computing, machine learning, and software systems.</p>
           </article>
         </div>
         <div className="credentials" data-reveal>
-          <div><span className="eyebrow">Certifications</span></div>
-          <article><span>Aug 2022</span><h3>Web Development Bootcamp</h3><p>Udemy</p></article>
-          <article><span>Jul 2021</span><h3>Python</h3><p>Code With Mosh</p></article>
-          <article><span>Jul 2021</span><h3>SQL</h3><p>Code With Mosh</p></article>
+          <div><span className="eyebrow">Engineering practices</span></div>
+          <article><span>Evaluation</span><h3>Report the limits</h3><p>Chronological test splits and scoped benchmark claims.</p></article>
+          <article><span>Evidence</span><h3>Make work reviewable</h3><p>Source code, setup steps, and documented results.</p></article>
+          <article><span>Reliability</span><h3>Test the failure paths</h3><p>Unit, integration, and browser checks.</p></article>
         </div>
       </section>
 
       <section className="contact-section" id="contact">
-        <div className="contact-kicker" data-reveal><span className="live-dot" /> Web development · AI/ML engineering · Boston</div>
-        <h2 data-reveal>Have a hard problem?<br /><em>Let&apos;s make it move.</em></h2>
-        <a className="contact-email" href="mailto:neevj2006@gmail.com">neevj2006@gmail.com <ArrowIcon /></a>
+        <div className="contact-kicker" data-reveal><span className="live-dot" /> Summer 2027 internships · AI/ML + full stack</div>
+        <h2 data-reveal>Hiring for Summer 2027?<br /><em>Let&apos;s talk.</em></h2>
+        <a className="contact-email" href="mailto:neevj2006@gmail.com" aria-label="Email Neev Jain at neevj2006@gmail.com">neevj2006@gmail.com <ArrowIcon /></a>
         <div className="contact-links">
-          <a href="mailto:nj2006@bu.edu">BU email <ArrowIcon /></a>
-          <a href="https://www.linkedin.com/in/neevj2006" target="_blank" rel="noreferrer">LinkedIn <ArrowIcon /></a>
-          <a href="https://github.com/neevj2006" target="_blank" rel="noreferrer">GitHub <ArrowIcon /></a>
-          <a href="/Resume.pdf" download>Résumé <ArrowIcon /></a>
+          <a href="mailto:nj2006@bu.edu" aria-label="Email Neev Jain at his BU email, nj2006@bu.edu">BU email <ArrowIcon /></a>
+          <a href="https://www.linkedin.com/in/neevj2006" target="_blank" rel="noopener noreferrer">LinkedIn <ArrowIcon /></a>
+          <a href="https://github.com/neevj2006" target="_blank" rel="noopener noreferrer">GitHub <ArrowIcon /></a>
+          <a href="/Resume.pdf" download="Neev_Jain_AI_ML_Resume.pdf" aria-label="Download Neev Jain AI/ML resume">AI/ML resume <ArrowIcon /></a>
+          <a href="/Resume-FullStack.pdf" download="Neev_Jain_FullStack_Resume.pdf" aria-label="Download Neev Jain full-stack resume">Full-stack resume <ArrowIcon /></a>
         </div>
       </section>
 
       <footer>
         <span>© 2026 Neev Jain</span>
-        <span>Designed around evidence, built with motion.</span>
+        <span>Computer Engineering at BU. Code and results linked above.</span>
         <div className="footer-links">
-          <a href="https://github.com/neevj2006" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="#top">Back to top ↑</a>
+          <a href="https://github.com/neevj2006" target="_blank" rel="noopener noreferrer">GitHub <ArrowIcon /></a>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
         </div>
       </footer>
     </main>

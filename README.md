@@ -8,33 +8,34 @@ Built with Next.js, TypeScript, and Anime.js, the site combines an editorial vis
 
 ## About the portfolio
 
-The portfolio is designed around one central idea: **engineering intelligence into interfaces**. It introduces my background in Computer Engineering at Boston University and highlights projects involving computer vision, natural language processing, adaptive learning, automation, and real-time web applications.
+Neev Jain is a Boston University B.Sc. Computer Engineering student with a machine learning concentration, expected graduation in December 2027, a 3.7/4.0 GPA, and Dean's List recognition. Seeking Summer 2027 AI/ML and full-stack software engineering internships.
 
-The content is based on my résumé and professional profiles. Project results, experience details, and credentials are intentionally kept evidence-based.
+**AI/ML x Web Developer — From models to working software.**
 
-## Highlights
+## Projects
 
-- Editorial hero section with an animated portrait presentation
-- Interactive canvas-based network field
-- Featured AI/ML projects with system-flow visualizations
-- Additional project archive sourced from my résumé
-- Switchable AI/ML and web-development skill collections
-- Experience, education, and certification timeline
-- Downloadable résumé and direct contact links
-- Responsive desktop, tablet, and mobile layouts
-- Keyboard-visible interaction states and semantic page structure
-- Reduced-motion support for accessible animation
-- Open Graph and X social-preview metadata
+Four featured projects:
 
-## Featured work
+1. [FraudGraph](https://github.com/neevj2006/FraudGraph) — temporal graph fraud investigation; local staging with documented benchmark limits.
+2. [SpecGuard](https://github.com/neevj2006/SpecGuard) — requirement-to-code review with file-and-line evidence; local development preview.
+3. [DevRelay](https://github.com/neevj2006/DevRelay) — monitoring and incident response; 201 automated checks. [Live demo](https://devrelay-delta.vercel.app/) uses seeded data.
+4. [F1 Race Predictor](https://github.com/neevj2006/F1_Race_Predictor) — research MVP; mean Spearman 0.754 across five held-out 2026 races (rounds 7–11), with rounds 1–6 used for model selection.
 
-The portfolio currently presents three featured systems:
+Four archive projects:
 
-1. **Vehicle Speed Detection** — vehicle detection, multi-object tracking, and speed estimation using YOLO, DeepSORT, Python, and OpenCV.
-2. **Gideon — Voice Assistant** — speech recognition and transformer-based intent understanding for an AI-powered voice interface.
-3. **Personalized Learning Assistant** — an adaptive learning application that uses performance data to recommend lessons, quizzes, and targeted feedback.
+5. [Gideon](https://github.com/neevj2006/Gideon) — local Windows voice and CLI assistant with optional cloud model fallback.
+6. [TransitPulse](https://github.com/neevj2006/TransitPulse) — MBTA transit data and full-stack application. [Live demo](https://transit-pulse-web.vercel.app).
+7. [Discord Clone](https://github.com/neevj2006/discord-clone) — real-time communication with Socket.io and LiveKit; source and local setup.
+8. [Vehicle Speed Detection](https://github.com/neevj2006/Vehicle_Speed_Detection) — recorded-video tracking and calibration-dependent speed estimates.
 
-Additional work includes a Discord clone, cryptojacking attack analysis, and GenZ Script—a programming language built with a custom lexer and parser.
+The page retains its animated portrait, canvas, diagrams, skill switcher, experience/education timeline, and three engineering-practice cards.
+
+## Resumes
+
+- [AI/ML resume](public/Resume.pdf)
+- [Full-stack resume](public/Resume-FullStack.pdf)
+
+Both are the supplied PDFs, offered as distinct downloads. `/Resume.pdf` remains the AI/ML destination for existing links.
 
 ## Technology
 
@@ -60,7 +61,7 @@ Portfolio/
 ├── public/
 │   ├── neev-jain.jpeg     # Browser-served portrait
 │   ├── og.png             # Social sharing preview
-│   └── Resume.pdf         # Downloadable résumé
+│   └── Resume.pdf         # AI/ML resume (Full-stack: Resume-FullStack.pdf)
 ├── tests/
 │   └── rendered-html.test.mjs
 ├── next.config.ts
@@ -103,7 +104,7 @@ The site respects `prefers-reduced-motion`, keeps important content visible when
 
 ## Content policy
 
-Personal facts, project descriptions, experience, and education details are sourced from my résumé, LinkedIn profile, and previous portfolio materials. The site avoids invented credentials or unsupported performance claims.
+Personal facts, project descriptions, experience, and education details follow the owner-supplied copy and current resumes. The site avoids invented credentials or unsupported performance claims.
 
 ## Connect
 
