@@ -11,7 +11,7 @@ const featuredProjects = [
     title: "FraudGraph",
     metric: "GRAPH",
     metricLabel: "transaction evidence",
-    description: "A temporal graph fraud investigation workbench for ranking transactions, comparing model scores, and tracing shared infrastructure. The local staging release includes an analyst workspace and auditable case exports; benchmark limits are documented in the repository.",
+    description: "A temporal graph fraud-investigation workbench trained on 590,540 IEEE-CIS transactions with chronological splits. XGBoost reached 0.1262 test AP and 33% precision at the top 100 alerts. Analysts can rank alerts, trace shared infrastructure, and export auditable cases.",
     tags: [
       "Python",
       "GraphSAGE",
@@ -22,7 +22,7 @@ const featuredProjects = [
     facts: [
       { label: "Model", value: "GraphSAGE + XGBoost" },
       { label: "App", value: "FastAPI + Next.js" },
-      { label: "Status", value: "Local staging" }
+      { label: "Status", value: "Benchmarked" }
     ],
     githubHref: "https://github.com/neevj2006/FraudGraph",
     sourceLabel: "Source & setup",
@@ -34,7 +34,7 @@ const featuredProjects = [
     title: "SpecGuard",
     metric: "CITED",
     metricLabel: "file-and-line evidence",
-    description: "A requirement-to-code review tool for JavaScript and TypeScript changes. It retrieves file-and-line evidence with BM25 and optional hybrid vector retrieval, with opt-in model assessments. This local development preview abstains when it cannot verify a claim and does not run reviewed code.",
+    description: "Reviews JavaScript and TypeScript pull requests against written requirements, citing file-and-line evidence through hybrid BM25 and vector retrieval. Import-graph boosts raised retrieval MRR from 0.625 to 1.0 on a held-out benchmark. It abstains when it can't verify a claim.",
     tags: [
       "Python",
       "TypeScript",
@@ -45,7 +45,7 @@ const featuredProjects = [
     facts: [
       { label: "Retrieval", value: "BM25 + hybrid" },
       { label: "Scope", value: "JS + TypeScript" },
-      { label: "Status", value: "Local preview" }
+      { label: "Status", value: "Working prototype" }
     ],
     githubHref: "https://github.com/neevj2006/SpecGuard",
     sourceLabel: "Source & setup",
@@ -57,7 +57,7 @@ const featuredProjects = [
     title: "DevRelay",
     metric: "201",
     metricLabel: "automated checks",
-    description: "A multi-tenant monitoring and incident-response application with policy-based checks, public status pages, and retry-safe notifications. Release evidence covers 201 automated checks: 113 unit tests, 75 integration tests, and 13 Chromium scenarios. Explore the hosted demo with seeded data.",
+    description: "A multi-tenant monitoring and incident-response application with policy-based checks, public status pages, and retry-safe notifications. Covered by 201 automated checks: 113 unit tests, 75 integration tests, and 13 Chromium scenarios. Explore the hosted demo with seeded data.",
     tags: [
       "Next.js",
       "NestJS",
@@ -81,7 +81,7 @@ const featuredProjects = [
     title: "F1 Race Predictor",
     metric: "0.754",
     metricLabel: "mean Spearman · 5 test races",
-    description: "A research MVP that predicts Formula 1 finishing orders before the weekend and after qualifying. The post-qualifying model averaged 0.754 Spearman correlation across five held-out 2026 races, rounds 7-11; rounds 1-6 were used for model selection. More unseen races are needed to judge performance.",
+    description: "A research MVP that predicts Formula 1 finishing orders before the weekend and after qualifying. The post-qualifying model averaged 0.754 Spearman correlation across five held-out 2026 races, rounds 7-11; rounds 1-6 were used for model selection. 2.84-position mean absolute error, with 10,000 Monte Carlo simulations per race.",
     tags: [
       "Python",
       "FastF1",
@@ -103,26 +103,20 @@ const archiveProjects = [
   {
     name: "Gideon",
     category: "Local assistant / voice + CLI",
-    detail: "A Windows personal assistant with voice and command-line interfaces, direct command handling, reminders, and SQLite storage. Model requests can use Ollama locally, with optional OpenAI or OpenRouter fallback. Runs locally; setup is in the repository.",
+    detail: "A Windows personal assistant with voice and command-line interfaces, direct command handling, reminders, and SQLite storage. Uses a quantized 1.5B-parameter local LLM through Ollama and an Android bridge secured with HMAC-SHA256, with optional OpenAI or OpenRouter fallback. Runs locally; setup is in the repository.",
     githubHref: "https://github.com/neevj2006/Gideon"
   },
   {
     name: "TransitPulse",
     category: "Transit data / full-stack",
-    detail: "An MBTA transit application built around static GTFS imports, GTFS-Realtime polling, feed diagnostics, and Server-Sent Events. Its interface distinguishes scheduled, live, and uncertain information. Explore routes, stops, and the map in the hosted demo.",
+    detail: "An MBTA transit application built around static GTFS imports, GTFS-Realtime polling, feed diagnostics, and Server-Sent Events. Achieves a 74% Redis cache hit rate, with live feeds polled every 60 seconds and 1.0s First Contentful Paint. Its interface distinguishes scheduled, live, and uncertain information. Explore routes, stops, and the map in the hosted demo.",
     githubHref: "https://github.com/neevj2006/TransitPulse",
     demoHref: "https://transit-pulse-web.vercel.app"
   },
   {
-    name: "Discord Clone",
-    category: "Real-time communication",
-    detail: "A Next.js communication app with server and channel management, real-time messaging through Socket.io, Prisma-backed data, and voice/video features through LiveKit. Source code and local setup are available on GitHub.",
-    githubHref: "https://github.com/neevj2006/discord-clone"
-  },
-  {
     name: "Vehicle Speed Detection",
     category: "Computer vision / video tracking",
-    detail: "A recorded-video workflow using YOLOv8, DeepSORT, and OpenCV to detect and track vehicles, then estimate speed from pixel displacement and a perspective-based pixel-to-meter conversion. Built for Google Colab; measurements depend on the video calibration.",
+    detail: "A recorded-video workflow using YOLOv8, DeepSORT, and OpenCV to detect and track vehicles, then estimate speed from pixel displacement and a perspective-based pixel-to-meter conversion. Built for Google Colab.",
     githubHref: "https://github.com/neevj2006/Vehicle_Speed_Detection"
   }
 ];
@@ -400,12 +394,12 @@ export default function Home() {
             <span>Neev</span>
             <span>Jain</span>
           </h1>
-          <div className="hero-role" aria-label="AI and machine learning, and web development">
-            <span>AI/ML</span><strong>x</strong><span>Web Developer</span>
+          <div className="hero-role" aria-label="ML & Full-Stack Engineer">
+            <span>ML</span><strong>&amp;</strong><span>Full-Stack Engineer</span>
           </div>
           <p className="hero-tagline">From models to working software.</p>
           <p className="hero-intro">
-            I am a Computer Engineering student at Boston University, building machine learning tools and full-stack applications. I am seeking Summer 2027 internships in AI/ML and full-stack software engineering.
+            I&apos;m a Computer Engineering student at Boston University (ML concentration) who builds machine learning models and the full-stack software around them. I&apos;m looking for Summer 2027 internships in AI/ML and software engineering.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#work">See my projects <ArrowIcon /></a>
@@ -430,7 +424,7 @@ export default function Home() {
             />
           </div>
           <div className="portrait-meta">
-            <span>B.Sc. Computer Engineering</span>
+            <span>B.S. Computer Engineering</span>
             <span>Boston University</span>
           </div>
           <div className="impact-card">
@@ -556,23 +550,23 @@ export default function Home() {
       <section className="section experience-section" id="experience">
         <header className="section-header compact" data-reveal>
           <div><span className="section-number">03</span><span className="eyebrow">Experience &amp; education</span></div>
-          <h2>What I have built, and where I am learning.</h2>
+          <h2>What I&apos;ve built and where I&apos;m learning.</h2>
         </header>
         <div className="timeline" data-reveal>
           <article>
-            <div className="timeline-date">May 2026 - Present</div>
-            <div><span>SportsExcitement</span><h3>Software Engineering Intern</h3></div>
-            <p>Built user-facing features and backend integrations, worked on authentication flows, and added 43 automated tests. Contributed across React, Next.js, TypeScript, and Node.js in a collaborative engineering workflow.</p>
+            <div className="timeline-date">May 2026 - Aug 2026</div>
+            <div><span>SportsExcitement · Remote</span><h3>Software Engineering Intern</h3></div>
+            <p>Built authenticated search, editable profiles, and a School Finder in Next.js for a pre-launch student-athlete platform. Implemented Express/Prisma mentorship APIs and added 43 Jest, React Testing Library, and Supertest tests.</p>
           </article>
           <article>
             <div className="timeline-date">May 2025 - Apr 2026</div>
-            <div><span>SeamsFriendly · Delhi, India</span><h3>AI &amp; Machine Learning Intern</h3></div>
-            <p>Built workflow automation with self-hosted n8n and Claude agents, contributed to a Next.js/PostgreSQL order-management application, and migrated the Shopify storefront to Next.js.</p>
+            <div><span>SeamsFriendly · Remote</span><h3>AI &amp; Machine Learning Intern</h3></div>
+            <p>Built a Next.js/PostgreSQL order management system that replaced Make and Google Sheets, cutting order-to-shipment time by 30%. Audited 71 Make scenarios and moved the workflows we kept to n8n, eliminating 60K Make operations a month. Rebuilt the Shopify storefront in Next.js.</p>
           </article>
           <article>
             <div className="timeline-date">Expected Dec 2027</div>
-            <div><span>Boston University · Boston, MA</span><h3>B.Sc. Computer Engineering</h3></div>
-            <p>Machine learning concentration. GPA: 3.7/4.0. Dean&apos;s List. Building a foundation across computing, machine learning, and software systems.</p>
+            <div><span>Boston University · Boston, MA</span><h3>B.S. Computer Engineering</h3></div>
+            <p>Machine learning concentration. GPA: 3.7/4.0. Dean&apos;s List.</p>
           </article>
         </div>
         <div className="credentials" data-reveal>
@@ -588,7 +582,6 @@ export default function Home() {
         <h2 data-reveal>Hiring for Summer 2027?<br /><em>Let&apos;s talk.</em></h2>
         <a className="contact-email" href="mailto:neevj2006@gmail.com" aria-label="Email Neev Jain at neevj2006@gmail.com">neevj2006@gmail.com <ArrowIcon /></a>
         <div className="contact-links">
-          <a href="mailto:nj2006@bu.edu" aria-label="Email Neev Jain at his BU email, nj2006@bu.edu">BU email <ArrowIcon /></a>
           <a href="https://www.linkedin.com/in/neevj2006" target="_blank" rel="noopener noreferrer">LinkedIn <ArrowIcon /></a>
           <a href="https://github.com/neevj2006" target="_blank" rel="noopener noreferrer">GitHub <ArrowIcon /></a>
           <a href="/Resume.pdf" download="Neev_Jain_AI_ML_Resume.pdf" aria-label="Download Neev Jain AI/ML resume">AI/ML resume <ArrowIcon /></a>

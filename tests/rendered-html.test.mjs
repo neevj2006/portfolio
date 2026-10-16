@@ -31,7 +31,7 @@ test("uses the supplied student positioning and curated project lineup", async (
   assert.match(page, /Expected Dec 2027/);
   assert.match(page, /3\.7\/4\.0/);
   assert.match(page, /neevj2006@gmail\.com/);
-  assert.match(page, /nj2006@bu\.edu/);
+  assert.doesNotMatch(page, /nj2006@bu\.edu/);
   assert.match(page, /Vehicle Speed Detection/);
   assert.match(page, /DevRelay/);
   assert.match(page, /https:\/\/devrelay-delta\.vercel\.app\//);
@@ -46,7 +46,7 @@ test("uses the supplied student positioning and curated project lineup", async (
   assert.match(page, /Engineering practices/);
   assert.match(page, /BUILD → TEST/);
   assert.match(page, /SportsExcitement/);
-  assert.match(page, /B\.Sc\. Computer Engineering/);
+  assert.match(page, /B\.S\. Computer Engineering/);
   assert.match(page, /Summer 2027/);
   assert.doesNotMatch(page, /research-grade|AI Automation Intern|B\.E\.|TalentHome|Personalized Learning Assistant|Cryptojacking Attack Analysis|workflow improvement|View production|GenZ Script/);
   assert.match(page, /className="skill-block"/);

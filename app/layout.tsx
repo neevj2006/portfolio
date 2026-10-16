@@ -26,11 +26,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: base,
-    title: "Neev Jain | AI/ML x Web Developer",
+    title: "Neev Jain | ML & Full-Stack Engineer",
     description:
       "Boston University Computer Engineering student building machine learning tools and full-stack applications. Seeking Summer 2027 AI/ML and software engineering internships.",
     openGraph: {
-      title: "Neev Jain | AI/ML x Web Developer",
+      title: "Neev Jain | ML & Full-Stack Engineer",
       description: "Machine learning projects, full-stack applications, and the evidence behind them. Boston University. Summer 2027 internship candidate.",
       type: "website",
       images: [
@@ -38,13 +38,13 @@ export async function generateMetadata(): Promise<Metadata> {
           url: new URL("/og.png", base),
           width: 1731,
           height: 909,
-          alt: "Neev Jain - AI/ML and web development portfolio",
+          alt: "Neev Jain - ML & Full-Stack Engineer portfolio",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Neev Jain | AI/ML x Web Developer",
+      title: "Neev Jain | ML & Full-Stack Engineer",
       description: "Machine learning projects, full-stack applications, and the evidence behind them. Boston University. Summer 2027 internship candidate.",
       images: [new URL("/og.png", base)],
     },
